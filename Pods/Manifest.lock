@@ -1,4 +1,5 @@
 PODS:
+  - Cosmos (20.0.1)
   - Kingfisher (4.10.1)
   - RxAppState (1.5.0):
     - RxCocoa (~> 4.4)
@@ -19,6 +20,7 @@ PODS:
   - Toaster (2.2.0)
 
 DEPENDENCIES:
+  - Cosmos
   - Kingfisher (~> 4.10.1)
   - RxAppState
   - RxCocoa (~> 4.4.0)
@@ -31,6 +33,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Cosmos
     - Kingfisher
     - RxAppState
     - RxAtomic
@@ -43,6 +46,7 @@ SPEC REPOS:
     - Toaster
 
 SPEC CHECKSUMS:
+  Cosmos: b47fddf2102bb48580cd3025d9ce0a5c658a65da
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   RxAppState: 46cae19e582daf7283a8f9ef553e7c049e1565b4
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
@@ -54,6 +58,6 @@ SPEC CHECKSUMS:
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
   Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
 
-PODFILE CHECKSUM: df16a0df846a420ad3e98ad42090ba23b613a28e
+PODFILE CHECKSUM: 4fec37a9c748c453d139d0dfa609e5c8c09cf88c
 
 COCOAPODS: 1.5.3

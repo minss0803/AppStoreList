@@ -18,6 +18,7 @@ target 'HandMade' do
   pod 'Kingfisher', '~> 4.10.1'
   pod 'SnapKit', '~> 4.2.0'
   pod 'Toaster'
+  pod 'Cosmos'
 
   # Other Swift Utilities
   pod 'Then', '~> 2.4.0'

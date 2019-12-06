@@ -11,6 +11,7 @@ import UIKit
 import Then
 import SnapKit
 import Kingfisher
+import Cosmos
 
 class AppListCell: UITableViewCell {
     private struct UI {
@@ -28,7 +29,7 @@ class AppListCell: UITableViewCell {
     //==== 앱 분류 정보
     let genresLabel = UILabel()          // 앱 카테고리
     let formattedPriceLabel = UILabel()  // 앱 가격(언어별 포맷팅 되어있음)
-    let averageUserRatingView = UIView() // 평균 별점
+    let averageUserRatingView = CosmosView() // 평균 별점
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -63,6 +64,10 @@ class AppListCell: UITableViewCell {
         
         formattedPriceLabel.do {
             $0.text = data.formattedPrice
+        }
+        
+        averageUserRatingView.do {
+            $0.rating = Double(data.averageUserRating ?? 0)
         }
         
     }
@@ -103,6 +108,12 @@ class AppListCell: UITableViewCell {
             $0.font = .systemFont(ofSize: 12, weight: .light)
             $0.textColor = .darkGray
         }
+        averageUserRatingView.do {
+            $0.settings.updateOnTouch = false
+            $0.settings.fillMode = .half
+            $0.settings.starSize = 15
+            $0.settings.starMargin = 0
+        }
     }
     
     func layout() {
@@ -115,6 +126,7 @@ class AppListCell: UITableViewCell {
         appInfoContainerView.addSubview(artistNameLabel)
         
         appDetailInfoContainerView.addSubview(genresLabel)
+        appDetailInfoContainerView.addSubview(averageUserRatingView)
         appDetailInfoContainerView.addSubview(formattedPriceLabel)
         
         cellContainerView.snp.makeConstraints {
@@ -147,9 +159,14 @@ class AppListCell: UITableViewCell {
         }
         
         genresLabel.snp.makeConstraints {
-            $0.top.left.right.equalToSuperview().inset(10)
+            $0.top.left.equalToSuperview().inset(10)
         }
-        
+        averageUserRatingView.snp.makeConstraints {
+            $0.top.equalTo(genresLabel).inset(0)
+            $0.left.greaterThanOrEqualTo(genresLabel.snp.right)
+            $0.right.equalToSuperview().inset(10)
+            $0.height.equalTo(15)
+        }
         formattedPriceLabel.snp.makeConstraints {
             $0.top.equalTo(genresLabel.snp.bottom)
             $0.bottom.left.right.equalToSuperview().inset(10)
