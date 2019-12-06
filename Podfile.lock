@@ -1,0 +1,59 @@
+PODS:
+  - Kingfisher (4.10.1)
+  - RxAppState (1.5.0):
+    - RxCocoa (~> 4.4)
+    - RxSwift (~> 4.4)
+  - RxAtomic (4.4.2)
+  - RxCocoa (4.4.2):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxGesture (2.1.0):
+    - RxCocoa (~> 4.4.0)
+    - RxSwift (~> 4.4.0)
+  - RxOptional (3.6.2):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.2):
+    - RxAtomic (>= 4.4.2, ~> 4.4)
+  - SnapKit (4.2.0)
+  - Then (2.4.0)
+  - Toaster (2.2.0)
+
+DEPENDENCIES:
+  - Kingfisher (~> 4.10.1)
+  - RxAppState
+  - RxCocoa (~> 4.4.0)
+  - RxGesture
+  - RxOptional (~> 3.6.2)
+  - RxSwift (~> 4.4.0)
+  - SnapKit (~> 4.2.0)
+  - Then (~> 2.4.0)
+  - Toaster
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+    - RxAppState
+    - RxAtomic
+    - RxCocoa
+    - RxGesture
+    - RxOptional
+    - RxSwift
+    - SnapKit
+    - Then
+    - Toaster
+
+SPEC CHECKSUMS:
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  RxAppState: 46cae19e582daf7283a8f9ef553e7c049e1565b4
+  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
+  RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
+  RxGesture: 7f6dfb45dbde06e618c24442d38493e3144f2c95
+  RxOptional: 80426a0ddbd092573e4c482d8cc13302078c4d5e
+  RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
+  Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
+
+PODFILE CHECKSUM: df16a0df846a420ad3e98ad42090ba23b613a28e
+
+COCOAPODS: 1.5.3

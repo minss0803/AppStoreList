@@ -1,0 +1,6 @@
+framework module Pods_HandMadeTests {
+  umbrella header "Pods-HandMadeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
