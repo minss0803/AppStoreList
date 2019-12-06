@@ -28,7 +28,7 @@ class SearchAppNetworkImpl: SearchAppNetwork {
                     let appList = try JSONDecoder().decode(SearchApp.self, from: data)
                     return .success(appList.results ?? [])
                 } catch {
-                    return .failure(.error("getRandomBeer API 에러"))
+                    return .failure(.error("APP List API 에러"))
                 }
         }
     }
